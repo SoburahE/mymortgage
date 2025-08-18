@@ -1,0 +1,79 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+            <link rel="stylesheet" href="newstyle.css">
+            <title>Mortgage Calculator</title>
+        </head>
+        <body>
+            <div class="wrapper">
+            <div class="left">
+                <div class="left-header">
+                   <h1 class="mort-title">Mortgage Calculator</h1>
+                    <p class="clear">Clear All</p> 
+                </div>
+
+                <div class="left-body">
+                    <div>
+                        <label for="amount">Mortgage Amount</label>
+                        <div class="span-input">
+                            <span class="prefix">&pound;</span>
+                            <input id="amount" type="number" name="mortgage-amount">
+                        </div>
+                  
+                    </div>
+
+                    <div class="input-row">
+                        <div>
+                          <label for="years">Mortgage Term</label>
+                          <div class="span-input">
+                        <input id="years" type="number" name="mortgage-term" min="1" max="100">
+                        <span class="suffix">years</span>
+                        </div>
+                        </div>
+
+                        <div>
+                          <label for="years">Interest Rate</label>
+                          <div class="span-input">
+                        <input id="rate" type="number" name="interest-rates" min="1" max="100">
+                        <span class="suffix">%</span>
+                        </div>
+                        </div>
+                       
+                    </div>
+
+                        <fieldset>
+                          <legend >Mortgage Type</legend>
+                            <div class="box">
+                            <label>
+                            <input type="radio" name="morttype" value="repayment" id="mort-type">
+                            Repayment</label>
+                            </div>
+
+                            <div class="box">
+                            <label>
+                            <input type="radio" name="morttype" value="interest" id="mort-type">
+                            Interest Only</label>
+                            </div>
+                        </fieldset>
+                            </div>
+                            
+            
+                <button type="submit"><img src="images/icon-calculator.svg" alt="Calculator icon">
+                    <p>Calculate Repayments</p></button>
+            </div>
+
+            <div class="right">
+                <div class="img">
+                <img src="images/illustration-empty.svg" alt="Illustration">
+                </div>
+                <div class="img">
+                <h1>Results shown here</h1>
+                <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.</p>
+                </div>
+            </div>
+            </div>
+        </body>
+        </html>
